@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* //....... Color ........// */
+    --primary-color: #457de7;
+    --light-black: rgba(0, 0, 0, 0.89);
+    --black: #000;
+    --smoke: #e9e9ea;
+    --white: #fff;
+    --grey: #858383;
+}
+
+nav{
+    background-color: var(--black);
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+.addtocard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.addtocard a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.3rem;
+}
+.box {
+    color: var(--white);
+    width: 30px;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    
+}
+
+.cart-count {
+    position: absolute;
+    color: var(--white);
+    background-color: var(--primary-color);
+    top: -5px;
+    right: 0;
+    padding: 3px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+#cart-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.features{
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    padding: 18%;
+    padding-top: 25%;
+    /* padding-bottom: 20%; */
+    background-image: url("https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/05/Malls-in-Mumbai.jpg?fit=1000%2C678&ssl=1");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+.menStore{
+    background-color: var(--primary-color);
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.menStore>a{
+    text-decoration: none;
+    color: var(--white);
+
+}
+.menStore:hover{
+    background-color: var(--black);
+}
+
+@media(max-width:530px){
+    .features{
+        padding: 5%;
+        padding-top: 30%;
+        padding-bottom: 20%;
+        width: 100%;
+        background-image: url("https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/05/Malls-in-Mumbai.jpg?fit=1000%2C678&ssl=1");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+    .menStore{
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+}
+img {
+    width: 100%;
+}
+.product-heading{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 4px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+}
+
+h2.title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.fashion-box {
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(29, 28, 28, 0.38);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pic {
+    overflow: hidden;
+}
+
+.pic:hover img {
+    transform: scale(1.3);
+}
+
+.fashion-img {
+    transition: 0.4s;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.fashion-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.fashion-price {
+    font-weight: 700;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.5s;
+   border-radius: 10px 0 0 0 ;
+}
+
+.add-cart:hover {
+    background-color: var(--black);
+}
+
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    z-index: 100;
+}
+
+.cart-active {
+    right: 0;
+    transition: 0.5s;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.cart-img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.price-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-fashion-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.total-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+.btn-buy {
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#cart-close {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
