@@ -60,7 +60,7 @@ nav{
 }
 @media(max-width:530px){
     nav{
-        width: 74%;
+        width: 95%;
     }
     .addtocard{
         display: flex;
@@ -395,4 +395,25 @@ footer {
     padding: 25px 0;
     font-size: 14px;
     color: var(--grey);
+}
+@media (max-width: 500px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .footer-container .content_1 {
+        margin-bottom: 30px;
+    }
+}
+@media(min-width: 501px) and (max-width: 768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-container .content_1 {
+        margin-bottom: 30px;
+    }
 }
