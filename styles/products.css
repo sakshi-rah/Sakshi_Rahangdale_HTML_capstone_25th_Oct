@@ -105,6 +105,10 @@ nav{
     .menStore{
         font-size: 0.7rem;
         padding: 5px;
+        text-align: center;
+    }
+    .product-heading h1{
+        font-size: 1.3rem;
     }
 }
 img {

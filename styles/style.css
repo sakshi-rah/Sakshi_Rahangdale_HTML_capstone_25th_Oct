@@ -295,7 +295,13 @@ body {
     padding-bottom: 20px;
     letter-spacing: 1.5px;
 }
-
+@media (max-width:530px) {
+    .home_txt p {
+        font-size: 0.9rem;
+        padding: 0;
+    }
+    
+}
 .home_txt h2 {
     font-size: 2.6rem;
     font-weight: 500;
@@ -306,8 +312,8 @@ body {
 }
 
 .home_txt .home_label p {
-    color: grey;
-    font-size: 14px;
+    color: var(--white);
+    font-size: 15px;
     padding-top: 10px;
 }
 
@@ -330,7 +336,10 @@ body {
     margin-bottom: 30px;
     cursor: pointer;
 }
+.home_txt button:hover{
+    background-color: var(--black);
 
+}
 .home_txt .bx-right-arrow-alt {
     font-size: 25px;
     padding-left: 5px;
@@ -987,6 +996,8 @@ iframe {
     .home_txt .home_label p {
         display: none;
     }
+
+  
 
     .home_txt {
         position: absolute;
