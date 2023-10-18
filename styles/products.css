@@ -17,32 +17,35 @@
     --grey: #858383;
 }
 
-nav{
+nav {
     background-color: var(--black);
     padding: 5px;
     position: fixed;
     width: 100%;
     z-index: 3;
 }
-.addtocard{
+
+.addtocard {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 3rem;
     margin-right: 3rem;
 }
-.addtocard a{
+
+.addtocard a {
     text-decoration: none;
     color: var(--white);
     font-size: 1.3rem;
 }
+
 .box {
     color: var(--white);
     width: 30px;
     height: 30px;
     position: relative;
     text-align: center;
-    
+
 }
 
 .cart-count {
@@ -58,11 +61,13 @@ nav{
     border-radius: 50%;
     z-index: 99;
 }
-@media(max-width:530px){
-    nav{
+
+@media(max-width:530px) {
+    nav {
         width: 95%;
     }
-    .addtocard{
+
+    .addtocard {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -71,12 +76,14 @@ nav{
     }
 
 }
+
 #cart-icon {
     font-size: 1.5rem;
     cursor: pointer;
     padding-top: 10px;
 }
-.features{
+
+.features {
     display: flex;
     gap: 3rem;
     width: 100%;
@@ -85,25 +92,28 @@ nav{
     background-image: url("https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/05/Malls-in-Mumbai.jpg?fit=1000%2C678&ssl=1");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
 }
-.menStore{
+
+.menStore {
     background-color: var(--primary-color);
     padding: 10px;
     font-size: 1.5rem;
     border-radius: 5px;
 }
-.menStore>a{
+
+.menStore>a {
     text-decoration: none;
     color: var(--white);
 
 }
-.menStore:hover{
+
+.menStore:hover {
     background-color: var(--black);
 }
 
-@media(max-width:530px){
-    .features{
+@media(max-width:530px) {
+    .features {
         padding: 5%;
         padding-top: 30%;
         padding-bottom: 20%;
@@ -111,21 +121,25 @@ nav{
         background-image: url("https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/05/Malls-in-Mumbai.jpg?fit=1000%2C678&ssl=1");
         background-position: center;
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-    .menStore{
+
+    .menStore {
         font-size: 0.7rem;
         padding: 5px;
         text-align: center;
     }
-    .product-heading h1{
+
+    .product-heading h1 {
         font-size: 1.3rem;
     }
 }
+
 img {
     width: 100%;
 }
-.product-heading{
+
+.product-heading {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -200,7 +214,7 @@ h2.title {
     font-size: 1.1rem;
     cursor: pointer;
     transition: 0.5s;
-   border-radius: 10px 0 0 0 ;
+    border-radius: 10px 0 0 0;
 }
 
 .add-cart:hover {
@@ -317,6 +331,10 @@ h2.title {
     cursor: pointer;
 }
 
+.btn-buy:hover {
+    background-color: var(--black);
+}
+
 #cart-close {
     position: absolute;
     top: 1rem;
@@ -396,6 +414,7 @@ footer {
     font-size: 14px;
     color: var(--grey);
 }
+
 @media (max-width: 500px) {
     .footer-container {
         display: flex;
@@ -407,6 +426,7 @@ footer {
         margin-bottom: 30px;
     }
 }
+
 @media(min-width: 501px) and (max-width: 768px) {
     .footer-container {
         display: flex;
