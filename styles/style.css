@@ -984,9 +984,9 @@ iframe {
 /* //....... Media Queries .......// */
 
 @media (max-width: 500px) {
-    .head {
+    /* .head {
         display: none;
-    }
+    } */
 
     .top-txt .head p,
     .top-txt .head a {
