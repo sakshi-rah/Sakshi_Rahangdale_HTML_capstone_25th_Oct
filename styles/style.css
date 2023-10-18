@@ -38,7 +38,9 @@ body {
 
 .head {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     color: rgba(255, 255, 255, 0.945);
     padding: 10px 0;
     font-size: 14px;
@@ -990,7 +992,7 @@ iframe {
 
     .top-txt .head p,
     .top-txt .head a {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .home_txt h2,
